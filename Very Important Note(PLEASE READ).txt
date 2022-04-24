@@ -1,0 +1,13 @@
+Please install filters before you run the code
+by : pip install django-filter
+
+we create admin account:
+
+User Name: admin1 
+PW:admin1
+
+
+we create student account:
+
+User Name: student1
+PW: student1
