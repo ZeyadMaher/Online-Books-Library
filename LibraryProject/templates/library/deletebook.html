@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+<head>
+<link rel="stylesheet" type="text/css" href="{% static 'css/deletebook.css' %}" />
+</head>
+  <body>
+    {% include "library/navbaradmin.html" %}
+    <br>
+    <br>
+    <br>
+    <br>
+<p id="p">Are you sure you want to delete this Book "{{item}}"</p><br><br><br><br><br><br><br><br><br>
+<form method="POST" action="{% url 'deletebook' item.id %}">
+    {% csrf_token %}
+    <input id="bt1" type="button" value="Cancel " onclick="history.back()">
+    <input id="bt2"type="submit" name="Confirm"value="Confirm">
+
+</form>
+
+</div>
+<br><br><br><br><br>
+{% include "library/footer.html" %}
+  </body>
+</html>

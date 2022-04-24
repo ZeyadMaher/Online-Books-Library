@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/viewbook.css' %}" />
+
+  </head>
+  <body>
+    {% include "library/navbaradmin.html" %}
+    
+    <br>
+    <br>
+    <h3 class="p-3 mb-2 bg-primary text-white" style = 'font-size: 50px;text-align:center;'>Available Book in Library !</h3>
+    <br><br>
+{% if books%}
+<table class="redTable">
+<thead>
+<tr>
+<th>Book Name</th>
+<th>ISBN</th>
+<th>Author</th>
+<th>Category</th>
+<th>Update</th>
+<th>Delete</th>
+</tr>
+</thead>
+<tfoot>
+<tr>
+<td colspan="4" rowspan="4">
+<div class="links"></div>
+</td>
+</tr>
+</tfoot>
+<tbody>
+  {% for book in books %}
+    <tr>
+      <td>{{book.name}}</td>
+      <td>{{book.isbn}}</td>
+      <td>{{book.author}}</td>
+      <td>{{book.category}}</td>
+      <td><a id="update" href="{% url 'updatebook' book.id %}">Update</a></td>
+      <td><a id="delete" href="{% url 'deletebook' book.id %}">Delete</a></td>
+    </tr>
+  {% endfor %}
+</tbody>
+</table>
+{%else%}
+<h1>Have 0 book</h1>
+{%endif%}
+
+
+
+    {% include "library/footer.html" %}
+  </body>
+</html>

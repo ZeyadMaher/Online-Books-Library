@@ -1,0 +1,42 @@
+#bg{
+  background-image: url("../images/img3.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-attachment:fixed;
+  background-position: center;
+}
+body{
+  background-image: url("../images/img3.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-attachment:fixed;
+  background-position: center;
+}
+#admin,#std{
+  text-align: center;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+#h1{
+  text-align: center ;
+  color:rgb(255, 255, 255);
+  font-weight:bold;
+}
+.lead{
+  color:rgb(255, 255, 255);
+  font-size: 30px;
+}
+.bs-example{
+  margin: 0px;
+}
+.navbar-brand{
+  font-size: 20px;
+  font-family: sans-serif;
+
+}
+.col-lg-6{
+  padding-left: 20%;
+}
+.jumbotron{
+  margin-bottom: 0px;
+}

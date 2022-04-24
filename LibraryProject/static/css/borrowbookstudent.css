@@ -1,0 +1,124 @@
+body {
+    background-image: url("../images/img3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: "Roboto", sans-serif;
+}
+
+.form-control {
+    border-color: rgb(238, 238, 238);
+    min-height: 41px;
+    box-shadow: none !important;
+}
+
+.form-control:focus {
+    border-color: #5cd3b4;
+}
+
+.form-control,
+.btn {
+    border-radius: 3px;
+}
+
+.signup-form {
+    width: 500px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+.signup-form h2 {
+    color: rgb(8, 8, 8);
+    margin: 0 0 30px 0;
+    text-align: center;
+    padding: 0 30px 10px 0;
+    
+}
+
+.signup-form form {
+    color: rgb(0, 0, 0); 
+    border-radius: 8px;
+    margin-bottom: 10px;
+    background: rgba(255, 255, 255, 0.514);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    margin-top: 100px;
+    
+}
+
+.signup-form .form-group {
+    margin-bottom: 20px;
+}
+
+.signup-form label {
+    font-weight: normal;
+    font-size: 15px;
+    font-weight: bold;
+    
+}
+
+.signup-form input[type="checkbox"] {
+    margin-top: 2px;
+}
+.signup-form input[type="text"] , input[type=number]{
+    
+    width: 100%;
+    height: 35px;
+    border-radius: 10px;
+    background-color: rgb(253, 253, 253);
+    border: none;
+    padding: 10px;
+}
+
+.signup-form .btn {
+    font-size: 16px;
+    font-weight: bold;
+    background: #5072b6;
+    border: none;
+    margin-top: 20px;
+
+    width: 100%;
+}
+
+.signup-form .btn:hover,
+.signup-form .btn:focus {
+    background: #41cba9;
+    outline: none !important;
+}
+
+.signup-form a {
+    color: #2b04ff;
+
+    text-decoration: underline;
+}
+
+.signup-form a:hover {
+    text-decoration: none;
+}
+
+.signup-form form a {
+    color: #5cd3b4;
+    text-decoration: none;
+}
+
+.signup-form form a:hover {
+    text-decoration: underline;
+}
+h3 {
+    margin: 0px;
+    text-align: center;
+}
+#link{
+    color: black;
+    padding: 50px;
+}
+.text-center{
+    padding: 30px;
+    color: white;
+    font-size: 17px;
+}
+.text-center a{
+    color: rgb(255, 64, 64);
+    font-weight: bolder;
+}

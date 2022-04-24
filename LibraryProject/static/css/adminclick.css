@@ -1,0 +1,30 @@
+body{
+    background-image: url("../images/img3.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment:fixed;
+    background-position: center;
+}
+#bg{
+    background-image: url("../images/img3.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment:fixed;
+    background-position: center;
+}
+.jumbotron{
+    margin-bottom: 0px;
+}
+.jumbotron h1{
+    text-align: center;
+}
+.display-4{
+    text-align: center ;
+    color:rgb(255, 255, 255);
+    font-weight:bold;
+}
+.lead{
+    color:rgb(255, 255, 255);
+    font-size: 30px;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+{% load static%}
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Update</title>
+  <link rel="stylesheet" type="text/css" href="{% static 'css/updatebook.css' %}" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+
+
+</head>
+
+<body style="background-color:#b6bde7;">
+  {% include "library/navbaradmin.html" %}
+  <br>
+  <br>
+
+  <div class="signup-form">
+    <form method="post" class="form-horizontal">
+
+      <h2>UPDATE BOOK IN LIBRARY</h2>
+
+      {% csrf_token %}
+
+      {% for field in form %}
+      <div class="form-group">
+        <label class="control-label col-xs-4">{{ field.label_tag }}</label>
+        <div class="col-xs-8">
+          {{ field }}
+        </div>
+      </div>
+      {% endfor %}
+
+
+      <div class="form-group">
+        <div class="col-xs-8 col-xs-offset-4">
+          <button type="submit" class="btn btn-primary btn-lg">SUBMIT</button>
+        </div>
+      </div>
+    </form>
+    <div class="text-center">View Available Book In Library<a href="viewbook">Click here</a></div>
+  </div>
+
+
+
+
+  {% include "library/footer.html" %}
+</body>
+
+</html>

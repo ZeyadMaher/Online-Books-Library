@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>View All Students</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/viewstudent.css' %}" />
+
+  </head>
+  <body>
+    {% include "library/navbaradmin.html" %}
+    <br>
+    <br>
+    <h3 class="p-3 mb-2 bg-primary text-white" style = 'font-size: 50px;text-align:center;'>Student registered in Library </h3>
+    <br><br>
+
+    {% if students%}
+<table class="redTable">
+<thead>
+<tr>
+<th>Name</th>
+<th>Enrollment</th>
+<th>Branch</th>
+</tr>
+</thead>
+<tfoot>
+<tr>
+<td colspan="3">
+<div class="links"></div>
+</td>
+</tr>
+</tfoot>
+<tbody>
+  {% for s in students %}
+    <tr>
+      <td>{{s.get_name}}</td>
+      <td>{{s.enrollment}}</td>
+      <td>{{s.branch}}</td>
+
+    </tr>
+
+  {% endfor %}
+</tbody>
+</table>
+{%else%}
+<h1> No Student Registered in Library</h1>
+{%endif%}
+
+
+
+<br><br><br><br><br><br>
+
+<br><br><br>
+  {% include "library/footer.html" %}
+  </body>
+</html>

@@ -1,0 +1,84 @@
+body {
+  background-image: url("../images/img3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  font-family: "Roboto", sans-serif;
+}
+table.redTable {
+border: 2px solid #082ca4;
+background-color: #8ed3ec;
+width: 100%;
+text-align: center;
+border-collapse: collapse;
+}
+table.redTable td, table.redTable th {
+border: 1px solid #AAAAAA;
+padding: 3px 2px;
+}
+table.redTable tbody td {
+font-size: 13px;
+}
+table.redTable tr:nth-child(even) {
+background: #bff3f5;
+}
+table.redTable thead {
+background: #082ca4;
+}
+table.redTable thead th {
+font-size: 19px;
+font-weight: bold;
+color: #FFFFFF;
+text-align: center;
+border-left: 2px solid #082ca4;
+}
+table.redTable thead th:first-child {
+border-left: none;
+}
+
+table.redTable tfoot {
+font-size: 13px;
+font-weight: bold;
+color: #FFFFFF;
+
+}
+table.redTable tfoot td {
+font-size: 13px;
+}
+table.redTable tfoot .links {
+text-align: right;
+}
+table.redTable tfoot .links a{
+display: inline-block;
+background: #FFFFFF;
+color: #082ca4;
+padding: 2px 8px;
+border-radius: 5px;
+}
+#update:link, #update:visited {
+  background-color: #3659f4;
+  color: white;
+  padding: 8px 18px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 10px;
+}
+
+#update:hover, #update:active {
+  background-color: rgb(4, 4, 150);
+}
+#delete:link, #delete:visited {
+  background-color:red ;
+  color: white;
+  padding: 8px 18px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 10px;
+}
+
+#delete:hover, #delete:active {
+  background-color: rgb(168, 2, 2);
+}

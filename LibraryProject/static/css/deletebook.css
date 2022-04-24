@@ -1,0 +1,47 @@
+body {
+    background-image: url("../images/img3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: "Roboto", sans-serif;
+}
+#bt1 {
+    top:-190px;
+    position: relative;
+    left: 36%;
+    background-color: #35448a;
+    color: white;
+    padding: 18px 38px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+#bt1:hover {
+    background-color: rgb(40, 40, 133);
+}
+#bt2 {
+    margin: 20px;
+    top:-190px;
+    position: relative;
+    left: 36%;
+    background-color:rgb(156, 59, 59) ;
+    color: white;
+    padding: 18px 38px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+#bt2:hover {
+    background-color: rgb(168, 2, 2);
+}
+
+#p{
+font-size: 30px;
+color: white;
+}
